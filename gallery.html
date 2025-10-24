@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <a href="index..html" home ></a>
+  <title>Pretty Girl’s Birthday Gallery 🖼️</title>
+  <u>
+    <a href="index..html" home ></a>
+
+  </u>
+  
+    
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #ffb6c1, #ff69b4, #ff1493);
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 40px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      text-shadow: 2px 2px 10px #ff007f;
+      margin-bottom: 30px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* 🎥 Video Section */
+    .video-section {
+      width: 90%;
+      max-width: 900px;
+      margin-bottom: 50px;
+      box-shadow: 0 4px 25px rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      display: block;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      width: 90%;
+      max-width: 1100px;
+    }
+
+    .photo {
+      width: 220px;
+      height: 220px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.4);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .photo:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 25px #fff;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      padding: 10px 0;
+      font-size: 1em;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .btn {
+      background-color: white;
+      color: #ff1493;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1.1em;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(255, 20, 147, 0.6);
+      transition: 0.3s;
+      margin-top: 40px;
+      margin-bottom: 50px;
+    }
+
+    .btn:hover {
+      background-color: #ffe4e1;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.3em; }
+      .photo { width: 160px; height: 160px; }
+      .caption { font-size: 0.9em; }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.8em; }
+      .photo { width: 130px; height: 130px; }
+      .caption { font-size: 0.8em; }
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Pretty Girl’s Birthday Gallery 💖</h1>
+
+  <!-- 🎥 Video 1: Birthday Highlights -->
+  <div class="video-section">
+    <video controls autoplay muted loop>
+      <source src="videos/birthday_highlight.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="gallery">
+    <div class="photo"><img src="r.1.jpeg" alt="Birthday Moment 1"><div class="caption"></div></div>
+    <div class="photo"><img src="r.2.jpeg"><div class="caption"></div></div>
+    <div class="photo"><img src="r.3.jpeg" alt="Birthday Moment 3"><div class="caption"></div></div>
+    <div class="photo"><img src="r.4.jpeg" alt="Birthday Moment 5"><div class="caption"></div></div>
+    <div class="photo"><img src="r.5.jpeg" alt="Birthday Moment 6"><div class="caption"></div></div>
+    <div class="photo"><img src="r.6.jpeg" alt="Birthday Moment 7"><div class="caption"></div></div>
+    <div class="photo"><img src="r.7.jpeg" alt="Birthday Moment 8"><div class="caption"></div></div>
+    <div class="photo"><img src="r.9.jpeg" alt="Birthday Moment 9"><div class="caption"></div></div>
+    <div class="photo"><img src="r.10.jpeg" alt="Birthday Moment 10"><div class="caption"> 💕</div></div>
+  </div>
+
+  <!-- 🎥 Video 2: Behind the Scenes / Fun Moments -->
+  <div class="video-section">
+    <video controls autoplay muted loop>
+      <source src="videos/fun_moments.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <button class="btn" onclick="goBack()">⬅ Back to Home</button>
+
+  <script>
+    function goBack() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
